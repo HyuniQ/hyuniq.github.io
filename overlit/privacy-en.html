@@ -52,8 +52,13 @@ footer{margin-top:48px;color:var(--soft);font-size:13px;border-top:1px solid var
 <td>Created automatically on first launch</td>
 </tr>
 <tr>
+<td>Google Play Games link</td>
+<td>Google Play Games player ID (used only to link your game account)</td>
+<td>Automatically if you are signed in to Google Play Games on the device, or Settings &gt; Google Play Games &gt; Link</td>
+</tr>
+<tr>
 <td>Game data</td>
-<td>Stars per stage, in-game currency (prisms) and hint tickets, owned characters and blocks, daily check-in record, hint usage</td>
+<td>Stars per stage, in-game currency (prisms) and hint tickets, owned characters and blocks, daily check-in record, hint usage, coupons used, items given by us</td>
 <td>Saved automatically while you play</td>
 </tr>
 <tr>
@@ -67,27 +72,34 @@ footer{margin-top:48px;color:var(--soft);font-size:13px;border-top:1px solid var
 <td>Collected by the ad SDK (Google AdMob) when an ad is shown</td>
 </tr>
 <tr>
+<td>Error reports</td>
+<td>Crash and error logs, device model, OS and app version, an installation ID (a random ID created for each installation)</td>
+<td>Sent automatically when the Game crashes or an error occurs</td>
+</tr>
+<tr>
 <td>Support</td>
 <td>Your email address, your message and, if you provide it, your player ID</td>
 <td>When you email us</td>
 </tr>
 </tbody>
 </table></div>
-<p>Payment details (such as card numbers) are handled by Google Play; we never receive them.</p>
+<p>Payment details (such as card numbers) are handled by Google Play; we never receive them. The Game does not use or store your Google Play Games nickname or profile picture.</p>
 <h3>2. Why we process it</h3>
 <ul>
-<li>Saving your progress and items and keeping them available</li>
+<li>Saving your progress and items and keeping them available (with Google Play Games linked, also after reinstalling or on a new phone)</li>
 <li>Verifying in-app purchases, preventing duplicate or fraudulent purchases, handling refunds</li>
-<li>Giving daily check-in and stage rewards</li>
+<li>Giving daily check-in, stage and coupon rewards, and compensation after support requests</li>
 <li>Showing rewarded ads you choose to watch, measuring ads and preventing ad fraud</li>
+<li>Finding the causes of crashes and errors and improving stability</li>
 <li>Answering your questions</li>
 </ul>
 <h3>3. How long we keep it</h3>
 <ul>
-<li>Game data: until you ask us to delete it or the service ends.</li>
+<li>Game data and your game account (including the Google Play Games link): until you delete it in the Game, ask us to delete it, or the service ends.</li>
 <li>Purchase records: <strong>5 years</strong>, as required by Korean e-commerce law, then deleted.</li>
 <li>Support emails: 1 year after the request is resolved.</li>
 <li>Advertising data: kept and processed by Google under Google's policies.</li>
+<li>Error reports: kept for Unity's service retention period, then deleted.</li>
 </ul>
 <h3>4. Service providers and international transfers</h3>
 <div class="table"><table>
@@ -103,14 +115,26 @@ footer{margin-top:48px;color:var(--soft);font-size:13px;border-top:1px solid var
 <tr>
 <td>Unity Technologies (Unity Gaming Services)</td>
 <td>United States and other countries where Unity's cloud servers are located</td>
-<td>Anonymous player ID, game data, purchase records</td>
+<td>Anonymous player ID, Google Play Games player ID (if linked), game data, purchase records</td>
 <td>Storing your game account and data, server processing</td>
+</tr>
+<tr>
+<td>Unity Technologies (Unity Diagnostics)</td>
+<td>United States and other countries where Unity's cloud servers are located</td>
+<td>Error reports (section 1)</td>
+<td>Analyzing crashes and errors</td>
 </tr>
 <tr>
 <td>Google LLC (Google Play billing)</td>
 <td>United States</td>
 <td>Purchase information</td>
 <td>Processing in-app purchases</td>
+</tr>
+<tr>
+<td>Google LLC (Google Play Games)</td>
+<td>United States</td>
+<td>Google Play Games sign-in information</td>
+<td>Sign-in and linking your game account</td>
 </tr>
 <tr>
 <td>Google LLC (Google AdMob)</td>
@@ -133,17 +157,20 @@ footer{margin-top:48px;color:var(--soft);font-size:13px;border-top:1px solid var
 <h3>7. Your rights and data deletion</h3>
 <ul>
 <li>You can ask to access, correct or delete your information, or to stop its processing.</li>
-<li><strong>To delete your data</strong>: copy your <strong>player ID from the Game's Settings screen</strong> and email it to <code>hyuniqlab@gmail.com</code> with the subject "Data deletion request". We delete your game data without delay (within 10 days at the latest) and let you know. Purchase records that the law requires us to keep are stored separately for the period in section 3 and then deleted.</li>
-<li>Uninstalling the Game removes data on your device, but your game data on our server remains until you request deletion.</li>
+<li><strong>Delete in the Game</strong>: tap <strong>Settings &gt; Data &gt; Delete my data</strong>. Your game data on our server, your game account (including the Google Play Games link) and the data on your device are deleted right away. This can't be undone, including purchased items.</li>
+<li><strong>Request by email</strong>: open <strong>Settings &gt; Support &gt; Player ID &gt; Copy</strong> and email it to <code>hyuniqlab@gmail.com</code> with the subject "Data deletion request". We delete your data without delay (within 10 days at the latest) and let you know.</li>
+<li>Either way, purchase records that the law requires us to keep are stored separately for the period in section 3 and then deleted.</li>
+<li>Uninstalling the Game does not delete your game data on our server. Use "Delete my data" or keep your player ID before uninstalling. If you linked Google Play Games, reinstalling connects you to the same data, so you can delete it then.</li>
+<li>Information in your Google Play Games profile itself is managed in your Google Account's Play Games settings.</li>
 </ul>
 <h3>8. Security</h3>
-<p>All communication is encrypted (TLS). Currency and purchase records can only be changed by our server, and purchases are credited only after the store's signature is verified. Access is limited to the business owner, and admin accounts use 2-step verification.</p>
+<p>All communication is encrypted (TLS). Currency and purchase records can only be changed by our server, and purchases are credited only after the store's signature is verified. Only operator accounts registered on the server can give items, and every grant is logged. Access is limited to the business owner, and admin accounts use 2-step verification.</p>
 <h3>9. Children</h3>
 <p>The Game is intended for users aged 13 and over. We do not knowingly collect personal information from children under 14 (the age of consent in Korea). If we learn that we have, we delete it without delay. Parents or guardians can request deletion as described in section 7.</p>
 <h3>10. Contact</h3>
 <p>Privacy officer: Jeonghyun Kim (김정현), hyuniqlab@gmail.com</p>
 <h3>11. Changes</h3>
-<p>This policy is effective from October 5, 2026. We will post any changes on this page at least 7 days before they take effect.</p>
+<p>This policy is effective from October 6, 2026. We will post any changes on this page at least 7 days before they take effect.</p>
 <footer>OVERLIT · <a href="../">HyuniQ</a> · <a href="mailto:hyuniqlab@gmail.com">hyuniqlab@gmail.com</a></footer>
 </main>
 </body>
